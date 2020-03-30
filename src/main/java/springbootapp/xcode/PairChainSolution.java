@@ -8,6 +8,7 @@ import java.util.Arrays;
 public class PairChainSolution {
 
     public static void main(String[] args) {
+        System.out.println("START OF PROGRAM");
         PairChainSolution app = new PairChainSolution();
         int[] [] arr = {{3,4}, {7,8}, {1,2},{2,3}};
         System.out.println("\nLength of Largest Chain is: " + app.findLongestChain(arr));
