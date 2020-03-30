@@ -1,0 +1,60 @@
+SpringBoot tut
+https://spring.io/guides/gs/spring-boot/
+
+Spring Context
+https://dzone.com/articles/difference-between-beanfactory-and-applicationcont
+
+
+Spring Boot with Angular:
+https://github.com/oktadeveloper/okta-spring-boot-2-angular-7-example/blob/master/server/pom.xml
+
+SpringBoot apps do not require a web.xml to setup infrastructure or plumbing
+Spring provides a mechanism for configuring user-defined interceptors to perform actions before and after web requests.
+
+One of the more useful interfaces is HandlerInterceptor, which can be used to log the incoming request by implementing the following methods:
+--preHandle() – this method is executed before the actual controller service method
+--afterCompletion() – this method is executed after the controller is ready to send the response
+
+SpringTemplateEngine is used when you use thymeleaf for example: Like ContactPL
+This is in the SpringContext
+
+Since this is a Spring MVC app (the view is included with the domain) then you'll need an embedded servlet engine.
+And probably need a DispatcherServlet
+
+
+@RestController
+Combines @Controller and @ResponseBody, two annotations that results in web requests returning data rather than a view.
+This annotation encapsulates other annotations for convenience and brevity.
+Does ContactPL use Controller and ResponseBody since it uses thymeleaf.
+Use this annotation on a class that will handle requests
+
+
+@SpringBootApplication
+Encapsulates other annotation for convenience and brevity:
+
+-@Configuration: Tags the class as a source of bean definitions for the application context.
+
+-@EnableAutoConfiguration: Tells Spring Boot to start adding beans based on classpath settings,
+other beans, and various property settings.
+For example, if spring-webmvc is on the classpath, this annotation flags the application as a
+web application and activates key behaviors, such as setting up a DispatcherServlet.
+
+-@ComponentScan: Tells Spring to look for other components, configurations,
+and services in the hello package, letting it find the Controllers.
+
+
+
+
+RunWith
+https://www.logicbig.com/tutorials/unit-testing/junit/runner.html
+
+If a JUnit class or its parent class is annotated with @RunWith,
+JUnit framework invokes the specified class as a test runner instead of running the default runner.
+
+A Runner class is responsible to run JUnit test, typically by reflection.
+
+
+Actuator:
+Spring Boot provides several out of the box with its actuator module, such as health, audits, beans, and more.
+
+Spring boot reference

@@ -1,0 +1,28 @@
+A Dockerfile is essentially a batch file, containing commands to build an image.
+
+FROM: The keyword FROM, tells Docker to use a given image with its tag as build-base. If this image is not in the local library, an online-search on DockerHub, or on any other configured remote-registry, is performed
+MAINTAINER: A MAINTAINER is usually an email address, identifying the author of an image
+RUN: With the RUN command, we're executing a shell command-line within the target system. Here we utilizing Alpine Linux's package manager apk to install the Java 8 OpenJDK
+COPY: The last command tells Docker to COPY a few files from the local file-system, specifically a subfolder to the build directory, into the image in a given path
+
+
+Seems to use the SpringBoot maven plugin
+Repackages existing JAR and WAR archives so that they can be executed from the command line using java -jar. With layout=NONE can also be used simply to package a JAR with nested dependencies (and no main class, so not executable).
+
+
+
+
+Start your VMBox  (where you setup the docker vm)
+
+docker-machine start
+List docker engines
+docker-machine ls
+
+
+
+Resources:
+https://www.baeldung.com/dockerizing-spring-boot-application
+
+
+https://docs.docker.com/docker-for-windows/
+https://docs.docker.com/machine/get-started/

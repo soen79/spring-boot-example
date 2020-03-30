@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="quake-dependency-1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/maven-repo/coursera-dependency/quake-dependency/1.0/quake-dependency-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
