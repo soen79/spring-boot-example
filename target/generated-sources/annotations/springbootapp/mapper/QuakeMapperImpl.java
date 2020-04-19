@@ -6,7 +6,7 @@ import springbootapp.domain.EarthQuakeDTO;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-03-29T21:03:03-0400",
+    date = "2020-04-10T20:41:19-0400",
     comments = "version: 1.3.0.Beta2, compiler: javac, environment: Java 1.8.0_45 (Oracle Corporation)"
 )
 public class QuakeMapperImpl implements QuakeMapper {
