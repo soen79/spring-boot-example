@@ -6,7 +6,6 @@ import java.util.Random;
 public class WebService {
     public Resource create(Document document){
 
-
         Random random = new Random(LocalDateTime.now().getNano());
         double val = random.nextDouble();
 

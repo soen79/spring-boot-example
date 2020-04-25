@@ -34,7 +34,9 @@ public class FeedHandler5 implements FeedHandler{
     }
 
     private Document setToProcessed(Document doc, Resource resource) {
-        int x = 5/0;
+        int x = 5/0;    // Simulate Error
+        Integer.parseInt("AA");  // Simulate Error
+
         Document retDoc = null;
         try {
             retDoc = (Document)doc.clone();

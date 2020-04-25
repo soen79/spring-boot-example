@@ -10,12 +10,14 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("-------------START OF PROGRAM-------------");
-        FeedHandler handler = new FeedHandler5();
-        List<Document> docs = getDocs();
-        handler.handle(docs);
+
+        // Execute the fabulous doc handler
+        new FeedHandler1().handle(getDocs());
+
         System.out.println("-------------END OF PROGRAM-------------");
     }
 
+    /** Simulate a source of documents */
     public static List<Document> getDocs() {
         List<Document> docs = Arrays.asList( new Document("LCR", "important"),
                 new Document("Coverage", "extra"),

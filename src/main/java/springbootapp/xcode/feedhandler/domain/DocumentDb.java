@@ -5,7 +5,7 @@ public class DocumentDb {
     public void update(Document doc) {
         String threadName = Thread.currentThread().getName();
         System.out.println(
-                String.format("[%s] Updating DB with document name: %s, resourceId: %s, status: %s",
+                String.format("[%s] Updating DB with document name: %s, resourceId: %s, status: [%s]\n",
                         threadName,
                         doc.getName() ,
                         doc.getId(),
